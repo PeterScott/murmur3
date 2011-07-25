@@ -27,6 +27,8 @@ The hash functions differ in both their internal mechanisms and in their outputs
 
 The hash functions are designed to work efficiently on x86 processors; in particular, they make some assumptions about the endianness of the processor, and about the speed of unaligned reads. If you have problems running this code on non-x86 architectures, it should be possible to modify it to work correctly and efficiently -- I just don't have access to those machines for testing. The code in `murmur3.c` is pretty straightforward, and shouldn't be too hard to alter.
 
+There is an example program, `example.c`, which you can look at and play with. You can build it with the makefile.
+
 License and contributing
 --------------------
 
