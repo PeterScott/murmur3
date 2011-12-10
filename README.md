@@ -21,7 +21,7 @@ The hash functions differ in both their internal mechanisms and in their outputs
 **MurmurHash3_x86_32** has the lowest throughput, but also the lowest latency. If you're making a hash table that usually has small keys, this is probably the one you want to use on 32-bit machines. It has a 32-bit output.
 
 
-**MurmurHash3_x86_128** is also designed for 32-bit systems, but produces a 128-bit output, and has about 30% higher throughput than the previous hash. Be warned, though, that its throughput for a single 16-byte key is about 86% longer!
+**MurmurHash3_x86_128** is also designed for 32-bit systems, but produces a 128-bit output, and has about 30% higher throughput than the previous hash. Be warned, though, that its latency for a single 16-byte key is about 86% longer!
 
 **MurmurHash3_x64_128** is the best of the lot, if you're using a 64-bit machine. Its throughput is 250% higher than MurmurHash3_x86_32, but it has roughly the same latency. It has a 128-bit output.
 
