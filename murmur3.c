@@ -13,7 +13,7 @@
 // Platform-specific functions and macros
 
 #ifdef __GNUC__
-#define FORCE_INLINE __attribute__((always_inline))
+#define FORCE_INLINE __attribute__((always_inline)) inline
 #else
 #define FORCE_INLINE
 #endif
