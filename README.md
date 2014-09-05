@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PeterScott/murmur3.svg?branch=master)](https://travis-ci.org/PeterScott/murmur3)
+
 C port of Murmur3 hash
 ==============
 
@@ -9,9 +11,9 @@ How to use it
 Just compile and link your program with `murmur3.c`, and be sure to include `murmur3.h` to get the function prototypes. There are three hash functions:
 
     void MurmurHash3_x86_32 (const void *key, int len, uint32_t seed, void *out);
-    
+
     void MurmurHash3_x86_128(const void *key, int len, uint32_t seed, void *out);
-    
+
     void MurmurHash3_x64_128(const void *key, int len, uint32_t seed, void *out);
 
 All three of these functions have the same interface: you give them `key`, a pointer to the data you wish to hash; `len`, the length in bytes; `seed`, an arbitrary seed number which you can use to tweak the hash, and `out`, a pointer to a buffer big enough to hold the hash's output value.
