@@ -6,6 +6,6 @@ add_executable(example example.c)
 
 target_link_libraries(example murmur3)
 
-add_executable(test test.c)
+add_executable(unit_test test.c)
 
-target_link_libraries(test murmur3)
+target_link_libraries(unit_test murmur3)
