@@ -3,3 +3,6 @@ example.o
 murmur3.o
 test.o
 tests
+.idea
+bin
+/cmake-build-debug/
