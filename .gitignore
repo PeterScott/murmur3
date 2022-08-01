@@ -1,5 +1,6 @@
 example
 example.o
-murmur3.o
+murmur3*.o
 test.o
 tests
+libmurmur3*.a
